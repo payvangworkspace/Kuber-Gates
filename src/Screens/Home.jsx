@@ -12,6 +12,10 @@ import PaymentFlowSection from '../Components/PaymentFlowSection'
 import SupportedCoinsSection from '../Components/SupportedCoinsSection'
 import HeroGateway from '../Components/GatewayFeatures'
 import GatewayFeatures from '../Components/GatewayFeatures'
+import CryptoCTA from '../Components/CryptoCTA'
+import PaymentFlow from '../Components/PaymentFlow'
+import SecurityTransparency from '../Components/SecurityTransparency'
+import Footer from '../Components/Footer'
 
 
 
@@ -24,8 +28,14 @@ const Home = () => {
       <FeaturesSection/>
     <PaymentFlowSection/>
     <SupportedCoinsSection/>
+    <PaymentFlow/>
     {/* <HeroGateway/> */}
     <GatewayFeatures/>
+  <SecurityTransparency/>
+    <CryptoCTA/>
+    <Footer/>
+  
+
 
     </div>
   )

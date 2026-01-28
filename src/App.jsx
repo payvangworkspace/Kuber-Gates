@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Screens/Home'
+import CryptoPayment from './Screens/Products/CryptoPayment'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
-
+   <Route path='/products/crypto-payments' element={<CryptoPayment />} />
 
 
 

@@ -9,6 +9,8 @@ import CryptoPayment from './Screens/Products/CryptoPayment'
 
 import FiatPayment from './Screens/Products/FiatPayment'
 import PaymentGateway from './Screens/Products/PaymentGateway'
+import {GetStart} from './Screens/GetStart'
+import {Price} from './Screens/Price'
 
 
 

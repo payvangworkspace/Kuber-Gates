@@ -8,7 +8,7 @@ const GetStarted = () => {
   const toggleForm = () => setIsLogin(!isLogin);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container}>1
       {/* LEFT FEATURES SECTION */}
       <div className={styles.featuresSection}>
         <h2 className={styles.featuresTitle}>Why Choose Us?</h2>
@@ -54,7 +54,6 @@ const GetStarted = () => {
                 className={styles.input}
               />
             )}
-
             <input type="email" placeholder="Email" className={styles.input} />
 
             <input

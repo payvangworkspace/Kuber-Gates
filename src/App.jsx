@@ -11,6 +11,9 @@ import FiatPayment from './Screens/Products/FiatPayment'
 import PaymentGateway from './Screens/Products/PaymentGateway'
 import {GetStart} from './Screens/GetStart'
 import {Price} from './Screens/Price'
+import { Subscription } from './Screens/Subscription'
+import { Donation } from './Screens/Donation'
+import { Whitelabel } from './Screens/Whitelabel'
 
 
 
@@ -24,6 +27,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/get-started' element={<GetStart/>} />
           <Route path='/pricing' element={<Price/>} />
+           <Route path='/products/subscriptions' element={<Subscription/>} />
+           <Route path='/products/donations' element={<Donation/>} />
+           <Route path='/products/white-label' element={<Whitelabel/>} />
    <Route path='/products/crypto-payments' element={<CryptoPayment />} />
     <Route path='/products/fiat-payments' element={<FiatPayment />} />
 <Route path='/products/payment-gateway' element={<PaymentGateway />} />

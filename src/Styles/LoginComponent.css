@@ -9,18 +9,18 @@
 }
 
 /* ===== PAGE WRAPPER ===== */
-.kg-login-wrapper {
+.log-kg-login-wrapper {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #ffffff, var(--bg-ivory));
+  background: linear-gradient(180deg, #ede9e9d4, var(--bg-ivory));
   padding: 20px;
   margin-top: 30px;
 }
 
 /* ===== LOGIN CARD ===== */
-.kg-login-card {
+.log-kg-login-card {
   background: #ffffff;
   width: 380px;
   padding: 42px 36px;
@@ -31,34 +31,34 @@
 }
 
 /* ===== LOGO ===== */
-.kg-logo {
+.log-kg-logo {
   margin-bottom: 18px;
 }
 
-.kg-logo img {
+.log-kg-logo img {
   height: 100px;
 }
 
 /* ===== TEXT ===== */
-.kg-login-card h2 {
+.log-kg-login-card h2 {
   font-size: 26px;
   color: var(--dark-blue);
   margin-bottom: 6px;
 }
 
-.kg-subtitle {
+.log-kg-subtitle {
   font-size: 14px;
   color: var(--soft-gray);
   margin-bottom: 26px;
 }
 
 /* ===== INPUTS ===== */
-.kg-input-group {
+.log-kg-input-group {
   position: relative;
   margin-bottom: 18px;
 }
 
-.kg-icon {
+.log-kg-icon {
   position: absolute;
   top: 50%;
   left: 14px;
@@ -67,7 +67,7 @@
   font-size: 16px;
 }
 
-.kg-input-group input {
+.log-kg-input-group input {
   width: 100%;
   padding: 14px 14px 14px 42px;
   border-radius: 12px;
@@ -78,17 +78,17 @@
   transition: all 0.3s ease;
 }
 
-.kg-input-group input::placeholder {
+.log-kg-input-group input::placeholder {
   color: #94a3b8;
 }
 
-.kg-input-group input:focus {
+.log-kg-input-group input:focus {
   border-color: var(--primary-blue);
   box-shadow: 0 0 0 3px rgba(91, 124, 250, 0.15);
 }
 
 /* ===== BUTTON ===== */
-.kg-login-btn {
+.log-kg-login-btn {
   width: 100%;
   margin-top: 12px;
   padding: 14px;
@@ -103,30 +103,30 @@
   transition: all 0.3s ease;
 }
 
-.kg-login-btn:hover {
+.log-kg-login-btn:hover {
   background: linear-gradient(135deg, var(--rose-hover), var(--rose-gold));
   transform: translateY(-1px);
 }
 
 /* ===== FOOTER ===== */
-.kg-footer {
+.log-kg-footer {
   margin-top: 18px;
 }
 
-.kg-footer a {
+.log-kg-footer a {
   font-size: 14px;
   color: var(--primary-blue);
   text-decoration: none;
   font-weight: 500;
 }
 
-.kg-footer a:hover {
+.log-kg-footer a:hover {
   text-decoration: underline;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
-  .kg-login-card {
+  .log-kg-login-card {
     width: 100%;
     padding: 36px 28px;
   }

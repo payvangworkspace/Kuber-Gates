@@ -13,23 +13,23 @@ const LoginComponent = () => {
   };
 
   return (
-    <div className="kg-login-wrapper">
-      <div className="kg-login-card">
+    <div className="log-kg-login-wrapper">
+      <div className="log-kg-login-card">
 
         {/* LOGO */}
-        <div className="kg-logo">
+        <div className="log-kg-logo">
           <img src={logo} alt="Kuber Gates Logo" />
         </div>
 
         <h2>Welcome back</h2>
-        <p className="kg-subtitle">
+        <p className="log-kg-subtitle">
           Sign in to your Kuber Gates dashboard
         </p>
 
         <form onSubmit={handleSubmit}>
 
-          <div className="kg-input-group">
-            <FaUser className="kg-icon" />
+          <div className="log-kg-input-group">
+            <FaUser className="log-kg-icon" />
             <input
               type="email"
               placeholder="Email address"
@@ -39,8 +39,8 @@ const LoginComponent = () => {
             />
           </div>
 
-          <div className="kg-input-group">
-            <FaLock className="kg-icon" />
+          <div className="log-kg-input-group">
+            <FaLock className="log-kg-icon" />
             <input
               type="password"
               placeholder="Password"
@@ -50,12 +50,12 @@ const LoginComponent = () => {
             />
           </div>
 
-          <button type="submit" className="kg-login-btn">
+          <button type="submit" className="log-kg-login-btn">
             Sign In
           </button>
         </form>
 
-        <div className="kg-footer">
+        <div className="log-kg-footer">
           <a href="#">Forgot password?</a>
         </div>
 

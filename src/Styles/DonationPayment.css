@@ -1,0 +1,211 @@
+.donation-split {
+  padding: 110px 8%;
+  background: var(--bg-main);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 90px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ================= LEFT CONTENT ================= */
+
+.donation-content {
+  max-width: 560px;
+}
+
+.donation-badge {
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 999px;
+  background: rgba(91, 141, 239, 0.14);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.donation-content h2 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  color: var(--text-main);
+}
+
+.donation-content p {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 26px;
+}
+
+/* Stats */
+
+.donation-stats {
+  display: flex;
+  gap: 34px;
+  margin-bottom: 28px;
+}
+
+.donation-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.donation-stats strong {
+  font-size: 26px;
+  color: var(--primary);
+}
+
+.donation-stats span {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Bullet Points */
+
+.donation-points {
+  list-style: none;
+  padding: 0;
+}
+
+.donation-points li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: var(--text-body);
+}
+
+/* ================= RIGHT CARD ================= */
+
+.donation-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85),
+    var(--bg-card)
+  );
+  border-radius: 28px;
+  padding: 48px;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Toggle */
+
+.donation-toggle {
+  display: flex;
+  background: #eef3ff;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 34px;
+}
+
+.donation-toggle button {
+  flex: 1;
+  padding: 13px;
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.donation-toggle button.active {
+  background: white;
+  color: var(--primary);
+}
+
+/* Titles */
+
+.donation-title {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: var(--text-main);
+}
+
+/* Amounts */
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.amount-grid button,
+.amount-grid input {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  background: white;
+  font-weight: 600;
+}
+
+.amount-grid button.selected {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.amount-grid input {
+  grid-column: span 3;
+}
+
+/* Payment */
+
+.payment-methods {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.method-card {
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  background: white;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+}
+
+.method-card.active {
+  border: 2px solid var(--primary);
+  background: rgba(91, 141, 239, 0.08);
+}
+
+/* CTA */
+
+.donate-btn {
+  width: 100%;
+  padding: 17px;
+  border-radius: 18px;
+  border: none;
+  background: linear-gradient(90deg, var(--cta), var(--cta-light));
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.donate-btn:hover {
+  background: linear-gradient(90deg, var(--cta-hover), var(--cta));
+}
+
+/* Note */
+
+.donation-note {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .donation-split {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .donation-content h2 {
+    font-size: 34px;
+  }
+}

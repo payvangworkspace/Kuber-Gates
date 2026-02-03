@@ -53,6 +53,7 @@
   padding: 22px;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .crypto-card:hover {

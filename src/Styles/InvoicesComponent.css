@@ -7,6 +7,16 @@
   max-width: 1200px;
   margin: auto;
 }
+.inv-feature{
+  cursor: pointer;
+}
+.inv-preview-btn{
+  cursor: pointer;
+}
+.inv-step{
+  cursor: pointer;
+}
+
 
 /* HEADER */
 .inv-header {
@@ -30,6 +40,10 @@
   font-size: 42px;
   color: #0f172a;
   margin-bottom: 14px;
+}
+
+.inv-card-item{
+  cursor: pointer;
 }
 
 .inv-header p {

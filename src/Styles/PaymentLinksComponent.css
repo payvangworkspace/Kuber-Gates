@@ -36,6 +36,9 @@
 .pl-left h1 span {
   color: #4f46e5;
 }
+.pl-item{
+  cursor: pointer;
+}
 
 .pl-left p {
   font-size: 18px;

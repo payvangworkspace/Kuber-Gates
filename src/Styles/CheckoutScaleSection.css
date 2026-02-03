@@ -12,7 +12,9 @@
   align-items: center;
   gap: 80px;
 }
-
+.checkout-item{
+  cursor: pointer;
+}
 /* LEFT */
 .scale-left h2 {
   font-size: 46px;

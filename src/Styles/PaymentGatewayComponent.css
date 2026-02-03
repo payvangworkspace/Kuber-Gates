@@ -9,6 +9,12 @@
   max-width: 1300px;
   margin: auto;
 }
+.pg-card{
+  cursor: pointer;
+}
+.pg-trust-item{
+  cursor: pointer;
+}
 
 /* HERO LAYOUT */
 .pg-hero {

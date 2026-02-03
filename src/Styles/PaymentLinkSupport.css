@@ -14,6 +14,13 @@
   max-width: 720px;
   margin: 0 auto 80px;
 }
+.pls-step{
+  cursor: pointer;
+}
+.pls-card-item{
+  cursor: pointer;
+}
+
 
 .pls-badge {
   display: inline-block;

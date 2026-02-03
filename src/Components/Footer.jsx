@@ -1,52 +1,78 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import {
+  FaTwitter,
+  FaLinkedinIn,
+  FaGithub
+} from "react-icons/fa";
 import "../Styles/Footer.css";
-import logo from "../Assets/logo.png"; // replace with your actual logo path
+import logo from "../assets/logo.png";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-top">
-        {/* Brand + Logo */}
-        <div className="footer-brand">
-          <img src={logo} alt="KuberGates Logo" className="footer-logo" />
-          <p>Secure, seamless, and smart crypto transactions at your fingertips.</p>
-          <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
+    <footer className="kg-footer">
+
+      <div className="kg-footer-container">
+
+        {/* BRAND */}
+        <div className="kg-footer-brand">
+          <img src={logo} alt="KuberGates Logo" />
+          <p>
+            KuberGates is a next‑generation crypto payment infrastructure
+            enabling global businesses to accept, manage, and scale payments
+            securely.
+          </p>
+
+          <div className="kg-footer-socials">
             <a href="#"><FaTwitter /></a>
             <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="#"><FaGithub /></a>
           </div>
         </div>
 
-        {/* Quick Links */}
-        <div className="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        {/* PRODUCTS */}
+        <div className="kg-footer-links">
+          <h4>Products</h4>
+          <Link to="/products/crypto-payments">Accept Crypto Payments</Link>
+          <Link to="/products/payment-gateway">Payment Gateway</Link>
+          <Link to="/products/payment-links">Payment Links</Link>
+          <Link to="/products/invoices">Invoices</Link>
+          <Link to="/products/subscriptions">Subscriptions</Link>
+          <Link to="/products/white-label">White‑Label Payments</Link>
+          <Link to="/products/multi-currency">Multi‑Currency Support</Link>
+          <Link to="/products/refunds">Refunds & Partial Refunds</Link>
         </div>
 
-        {/* Newsletter / CTA */}
-        <div className="footer-newsletter">
-          <h3>Stay Updated</h3>
-          <p>Subscribe to our newsletter for crypto insights and updates.</p>
-          <div className="newsletter-form">
-            <input type="email" placeholder="Enter your email" />
-            <button>Subscribe</button>
-          </div>
+        {/* DEVELOPERS */}
+        <div className="kg-footer-links">
+          <h4>Developers</h4>
+          <Link to="/developers/api-docs">API Documentation</Link>
+          <Link to="/developers/sdks">SDKs</Link>
+          <Link to="#">Webhooks</Link>
+          <Link to="#">System Status</Link>
+        </div>
+
+        {/* COMPANY */}
+        <div className="kg-footer-links">
+          <h4>Company</h4>
+          <Link to="/company">About Us</Link>
+          <Link to="/pricing">Pricing</Link>
+          <Link to="#">Security</Link>
+          <Link to="#">Compliance</Link>
+          <Link to="#">Contact</Link>
+        </div>
+
+      </div>
+
+      {/* BOTTOM */}
+      <div className="kg-footer-bottom">
+        <p>© 2026 KuberGates. All rights reserved.</p>
+        <div>
+          <Link to="#">Privacy Policy</Link>
+          <Link to="#">Terms of Service</Link>
         </div>
       </div>
 
-      <div className="footer-bottom">
-        <p>© 2026 KuberGates. All Rights Reserved.</p>
-      </div>
     </footer>
   );
-};
-
-export default Footer;
+}
